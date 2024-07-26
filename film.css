@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    background-image: url('kny affiche 1.jpg');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: aqua;
+    color: white;
+}
+
+#teinte {
+    color: whitesmoke;
+}
+
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.film {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.film:hover {
+    transform: scale(1.05);
+}
+
+.film .poster {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.film h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.film video {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav li {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .film h2 {
+        font-size: 20px;
+    }
+
+    .film-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .film h2 {
+        font-size: 16px;
+    }
+}
